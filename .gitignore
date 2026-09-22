@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# Vídeo-fonte preservado localmente; o site usa a versão otimizada.
+/public/videos/video-apresentacao-rafa.MP4
 
 # vercel
 .vercel
