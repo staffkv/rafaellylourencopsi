@@ -11,60 +11,199 @@ export const professional = {
 export const navigation = [
   { label: "Início", href: "#inicio" },
   { label: "Ansiedade", href: "#ansiedade" },
-  { label: "Terapia para Adolescentes", href: "#adolescentes" },
+  { label: "Terapia Infantojuvenil", href: "#adolescentes" },
   { label: "Terapia para Casais", href: "#casais" },
 ];
 
 export const concerns = [
   {
     number: "01",
-    title: "Ansiedade generalizada",
-    subtitle: "Quando a mente parece não descansar.",
-    description:
-      "Preocupação constante, inquietação, dificuldade para dormir e tensão no corpo.",
-    focus:
-      "Compreender seus pensamentos e desenvolver mais flexibilidade diante das preocupações.",
+    title: "Ansiedade e preocupações excessivas",
+    subtitle: "Pensamentos acelerados, insegurança, medos e dificuldade para relaxar.",
+    situations: [
+      "Preocupação constante com o futuro",
+      "Pensamentos acelerados e dificuldade para relaxar",
+      "Medo de falhar, errar ou perder o controle",
+      "Insegurança e necessidade excessiva de controle",
+      "Crises de ansiedade e dificuldade para lidar com situações estressantes",
+    ],
     icon: "mind",
   },
   {
     number: "02",
-    title: "Ansiedade social",
-    subtitle: "Quando estar com o outro é um desafio.",
-    description:
-      "Medo de julgamentos, insegurança nas interações e vontade de evitar situações sociais.",
-    focus:
-      "Construir confiança, respeitando seu ritmo, para se sentir mais à vontade nas relações.",
+    title: "Autoestima, autoconhecimento e emoções",
+    subtitle: "Autocrítica, insegurança, necessidade de aprovação e compreensão das próprias emoções.",
+    situations: [
+      "Insegurança e autocrítica excessiva",
+      "Dificuldade em reconhecer e expressar sentimentos",
+      "Dificuldade para estabelecer limites e dizer não",
+      "Necessidade de aprovação e medo de desagradar",
+      "Dificuldade para lidar com frustrações",
+    ],
     icon: "people",
   },
   {
     number: "03",
-    title: "Fobias e medos",
-    subtitle: "Quando o medo limita suas escolhas.",
-    description:
-      "Medo intenso de situações específicas, como voar, estar em locais fechados ou perto de animais.",
-    focus:
-      "Construir um caminho gradual e cuidadoso para lidar com os medos e ampliar sua autonomia.",
-    icon: "shield",
+    title: "Relacionamentos e vida afetiva",
+    subtitle: "Conflitos, comunicação, confiança e limites nas relações.",
+    situations: [
+      "Conflitos recorrentes nos relacionamentos",
+      "Dificuldades de comunicação",
+      "Dependência emocional e medo de abandono",
+      "Ciúmes, insegurança e dificuldades de confiança",
+      "Dificuldade para estabelecer limites saudáveis",
+      "Sofrimento diante de términos e mudanças na vida afetiva",
+    ],
+    icon: "heart",
   },
   {
     number: "04",
-    title: "Depressão",
-    subtitle: "Quando os dias perdem a cor.",
-    description:
-      "Desânimo, cansaço frequente, perda de interesse e dificuldade para enxergar possibilidades.",
-    focus:
-      "Trabalhar a ativação comportamental, os pensamentos e a retomada de atividades significativas.",
-    icon: "sun",
+    title: "Estresse, sobrecarga e esgotamento emocional",
+    subtitle: "Excesso de responsabilidades, irritabilidade e dificuldade para equilibrar as demandas da vida.",
+    situations: [
+      "Sensação de estar sempre sobrecarregado(a)",
+      "Dificuldade para conciliar vida pessoal e profissional",
+      "Excesso de responsabilidades",
+      "Irritabilidade e dificuldade para descansar",
+      "Dificuldade para lidar com mudanças e cobranças",
+    ],
+    icon: "balance",
   },
   {
     number: "05",
-    title: "Estresse e burnout",
-    subtitle: "Quando tudo parece demais.",
-    description:
-      "Esgotamento físico e mental, irritabilidade e a sensação de nunca conseguir desacelerar.",
-    focus:
-      "Desenvolver limites, regular o estresse e construir uma rotina mais sustentável.",
+    title: "Procrastinação, organização e produtividade",
+    subtitle: "Adiamento de tarefas, dificuldade para manter o foco, planejamento e autocobrança.",
+    situations: [
+      "Adiamento frequente de tarefas importantes",
+      "Dificuldade para iniciar ou concluir atividades",
+      "Problemas de organização e planejamento",
+      "Dificuldade para manter o foco",
+      "Autocobrança e culpa por não conseguir realizar o que planejou",
+    ],
+    icon: "sun",
+  },
+  {
+    number: "06",
+    title: "Humor e sofrimento emocional",
+    subtitle: "Tristeza, desânimo, culpa e dificuldades para lidar com as emoções.",
+    situations: [
+      "Tristeza persistente e desânimo",
+      "Perda de interesse por atividades antes prazerosas",
+      "Sentimentos de culpa e desvalorização",
+      "Dificuldade para lidar com emoções intensas",
+      "Alterações emocionais que interferem na rotina e nos relacionamentos",
+    ],
+    icon: "mind",
+  },
+  {
+    number: "07",
+    title: "Luto, perdas e transições de vida",
+    subtitle: "Perdas, términos, transições e adaptação a novas fases da vida.",
+    situations: [
+      "Sofrimento após a perda de alguém importante",
+      "Términos de relacionamento",
+      "Mudanças profissionais ou familiares",
+      "Dificuldade para se adaptar a novas fases da vida",
+      "Busca por sentido, direção e novos projetos pessoais",
+    ],
+    icon: "heart",
+  },
+  {
+    number: "08",
+    title: "Sono e hábitos",
+    subtitle: "Dificuldade para dormir, desacelerar e manter uma rotina de descanso.",
+    situations: [
+      "Dificuldade para adormecer ou manter o sono",
+      "Pensamentos recorrentes na hora de dormir",
+      "Dificuldade para desacelerar após um dia intenso",
+      "Hábitos que prejudicam o descanso e o bem-estar",
+    ],
+    icon: "sun",
+  },
+  {
+    number: "09",
+    title: "Experiências traumáticas e situações difíceis",
+    subtitle: "Sofrimento após experiências marcantes e dificuldade para se sentir seguro(a) novamente.",
+    situations: [
+      "Sofrimento relacionado a experiências marcantes",
+      "Medo e insegurança após situações ameaçadoras",
+      "Lembranças dolorosas que provocam sofrimento",
+      "Dificuldade para se sentir seguro(a) novamente",
+      "Reações emocionais que interferem na vida cotidiana",
+    ],
+    icon: "shield",
+  },
+  {
+    number: "10",
+    title: "Comportamentos repetitivos e dificuldades de controle",
+    subtitle: "Pensamentos intrusivos ou hábitos que geram sofrimento e interferem na rotina.",
+    situations: [
+      "Pensamentos intrusivos que provocam desconforto",
+      "Necessidade excessiva de verificar ou repetir ações",
+      "Dificuldade para interromper comportamentos prejudiciais",
+      "Hábitos compulsivos que geram sofrimento ou interferem na rotina",
+    ],
     icon: "balance",
+  },
+] as const;
+
+export const therapyBenefits = [
+  "Desenvolver habilidades para lidar com situações difíceis",
+  "Fortalecer o autoconhecimento e a autonomia",
+  "Construir relacionamentos mais saudáveis",
+  "Identificar padrões de pensamento e comportamento",
+  "Estabelecer metas e desenvolver projetos de vida",
+  "Aprender estratégias para cuidar da saúde emocional",
+];
+
+export const youthConcerns = [
+  {
+    title: "Ansiedade, medos e inseguranças",
+    description:
+      "Preocupações excessivas, medo de se separar dos pais, insegurança, dificuldade para lidar com mudanças e situações novas.",
+    icon: "mind",
+  },
+  {
+    title: "Regulação emocional e comportamento",
+    description:
+      "Dificuldade para lidar com frustrações, impulsividade, irritabilidade, crises emocionais, agressividade e conflitos no cotidiano.",
+    icon: "balance",
+  },
+  {
+    title: "Autoestima, autoconhecimento e adolescência",
+    description:
+      "Insegurança, autocrítica, dificuldades de autoimagem, necessidade de pertencimento e desafios relacionados às mudanças dessa fase.",
+    icon: "sun",
+  },
+  {
+    title: "Relacionamentos familiares e conflitos",
+    description:
+      "Dificuldades de comunicação entre pais e filhos, conflitos familiares, estabelecimento de limites e adaptação ao divórcio dos pais.",
+    icon: "heart",
+  },
+  {
+    title: "Uso de telas, tecnologia e rotina",
+    description:
+      "Dificuldade para equilibrar o tempo de tela com sono, estudos, atividades sociais e responsabilidades; conflitos familiares relacionados ao uso de dispositivos.",
+    icon: "people",
+  },
+  {
+    title: "Atenção, organização e aprendizagem",
+    description:
+      "Dificuldades de concentração, planejamento, organização da rotina, controle dos impulsos e adaptação às demandas escolares.",
+    icon: "mind",
+  },
+  {
+    title: "Luto, perdas e mudanças de vida",
+    description:
+      "Sofrimento diante da perda de pessoas importantes, separações, mudanças familiares e experiências difíceis que afetam o bem-estar emocional.",
+    icon: "shield",
+  },
+  {
+    title: "Habilidades sociais e relacionamentos",
+    description:
+      "Dificuldades para fazer amizades, expressar sentimentos, comunicar necessidades, lidar com conflitos e desenvolver autonomia nas relações.",
+    icon: "people",
   },
 ] as const;
 
@@ -73,7 +212,9 @@ export const qualifications = [
   "Capacitação em Terapia Cognitivo-Comportamental (TCC).",
   "Formação na Prática em TCC com Gabriela Affonso, psicóloga e mestre pela USP.",
   "Curso em Terapias Cognitivas na ARTMED em andamento.",
-  "Pós-graduação em Terapias Cognitivas e Contextuais para Casais na PUCPR em andamento.",
+  "Pós-graduada em Terapias Cognitivas e Contextuais para Casais pela PUCPR.",
+  "Pós-graduanda em Avaliação Psicológica e Psicodiagnóstico pela UNIESP.",
+  "Pós-graduanda em Terapia Cognitivo-Comportamental pela PUCRS.",
 ];
 
 export const questions = [
@@ -93,9 +234,9 @@ export const questions = [
       "A duração e a frequência são combinadas no início do acompanhamento, de acordo com as necessidades de cada pessoa. Você pode conversar com a Rafaelly sobre esses detalhes antes de agendar.",
   },
   {
-    question: "Como funciona o atendimento para adolescentes?",
+    question: "Como funciona o atendimento para crianças e adolescentes?",
     answer:
-      "O acompanhamento oferece espaço para conversar sobre emoções, mudanças e relações. A participação dos responsáveis e os combinados do atendimento são conversados no início, considerando cada situação.",
+      "O acompanhamento oferece espaço para compreender emoções, mudanças e relações. Quando necessário, pais e responsáveis também são orientados. A participação da família e os combinados do atendimento são conversados considerando cada situação.",
   },
   {
     question: "A terapia de casal é só para momentos de crise?",

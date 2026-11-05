@@ -12,11 +12,7 @@ export function Hero() {
             UM ESPAÇO DE ESCUTA E ACOLHIMENTO
           </span>
           <h1>
-            Você não precisa
-            <br />
-            dar conta de tudo
-            <br />
-            <em>sozinho.</em>
+            A saúde mental também precisa de sua atenção e cuidado!
           </h1>
           <p>
             Um espaço para acolher o que você sente, compreender a sua história
@@ -49,13 +45,7 @@ export function Hero() {
           </div>
           <div className="hero-stamp">
             <Icon name="heart" />
-            <span>
-              Acolher.
-              <br />
-              Compreender.
-              <br />
-              <em>Transformar.</em>
-            </span>
+            <span>Você tem colocado o cuidado psicológico em último plano?</span>
           </div>
           <span className="photo-side-note">
             CADA HISTÓRIA MERECE SER OUVIDA

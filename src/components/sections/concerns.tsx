@@ -1,4 +1,4 @@
-import { concerns } from "@/lib/site-content";
+import { concerns, therapyBenefits } from "@/lib/site-content";
 import { ContactLink } from "../ui/contact-link";
 import { Icon } from "../ui/icon";
 import { SectionHeading } from "../ui/section-heading";
@@ -14,11 +14,16 @@ function ConcernCard({ concern }: { concern: (typeof concerns)[number] }) {
       </div>
       <h3>{concern.title}</h3>
       <p className="card-subtitle">{concern.subtitle}</p>
-      <p>{concern.description}</p>
-      <div className="card-focus">
-        <span>COMO PODEMOS TRABALHAR</span>
-        <p>{concern.focus}</p>
-      </div>
+      <details className="concern-details">
+        <summary>
+          Ver situações que podem ser trabalhadas <Icon name="plus" />
+        </summary>
+        <ul>
+          {concern.situations.map((situation) => (
+            <li key={situation}>{situation}</li>
+          ))}
+        </ul>
+      </details>
     </article>
   );
 }
@@ -28,15 +33,17 @@ export function Concerns() {
     <section id="ansiedade" className="section concerns">
       <div className="container">
         <div className="section-intro">
-          <SectionHeading eyebrow="UM OLHAR PARA O QUE VOCÊ VIVE">
-            O que tem pesado
+          <SectionHeading eyebrow="PSICOTERAPIA PARA ADULTOS">
+            Em quais situações a
             <br />
-            <em>por aí?</em>
+            <em>psicoterapia pode ajudar?</em>
           </SectionHeading>
           <p>
-            Às vezes, é difícil colocar em palavras. A terapia é um espaço para
-            compreender o que acontece dentro de você e encontrar formas de
-            lidar com isso.
+            A psicoterapia é um espaço de acolhimento, escuta e autoconhecimento,
+            que possibilita compreender emoções, pensamentos e comportamentos,
+            desenvolver novas estratégias de enfrentamento e lidar de maneira
+            mais saudável com os desafios da vida. O acompanhamento pode ajudar
+            em diferentes momentos e situações, como:
           </p>
         </div>
         <div className="concerns-grid">
@@ -56,6 +63,29 @@ export function Concerns() {
             </p>
             <ContactLink variant="light">Dar o primeiro passo</ContactLink>
           </article>
+        </div>
+        <div className="therapy-followup">
+          <div className="therapy-benefits">
+            <h3>A psicoterapia também pode ajudar você a:</h3>
+            <ul>
+              {therapyBenefits.map((benefit) => (
+                <li key={benefit}>
+                  <Icon name="check" />
+                  <span>{benefit}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p>
+            Você não precisa esperar que o sofrimento se torne insuportável para
+            buscar acompanhamento psicológico. O cuidado também pode começar
+            pelo desejo de se conhecer melhor, desenvolver recursos emocionais
+            e construir uma vida mais alinhada aos seus valores.
+          </p>
+          <p>
+            O acompanhamento é individualizado e considera a história, as
+            necessidades e os objetivos de cada pessoa.
+          </p>
         </div>
       </div>
     </section>

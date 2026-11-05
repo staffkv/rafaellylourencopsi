@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Rafaelly Lourenço | Psicóloga Clínica",
   description:
-    "Um espaço de escuta e acolhimento com a psicóloga Rafaelly Lourenço. Conheça seu trabalho com ansiedade, adolescentes e casais e sua abordagem em TCC.",
+    "Um espaço de escuta e acolhimento com a psicóloga Rafaelly Lourenço. Conheça seu trabalho com ansiedade, crianças, adolescentes e casais e sua abordagem em TCC.",
   icons: {
     icon: {
       url: "/images/optimized/brand-icon.png?v=2",
