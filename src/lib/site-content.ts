@@ -1,10 +1,16 @@
 const whatsappNumber = (
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "558391814951"
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5583986949995"
 ).replace(/\D/g, "");
+const phoneParts = whatsappNumber.match(/^55(\d{2})(\d{5})(\d{4})$/);
 
 export const professional = {
   name: "Rafaelly Lourenço",
   crp: process.env.NEXT_PUBLIC_CRP || "13/13489",
+  phone: whatsappNumber,
+  phoneDisplay: phoneParts
+    ? `(${phoneParts[1]}) ${phoneParts[2]}-${phoneParts[3]}`
+    : whatsappNumber,
+  instagramUrl: "https://www.instagram.com/psirafaellylourenco/",
   whatsappUrl: `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, Rafaelly! Gostaria de saber mais sobre o atendimento psicológico.")}`,
 };
 
@@ -19,7 +25,8 @@ export const concerns = [
   {
     number: "01",
     title: "Ansiedade e preocupações excessivas",
-    subtitle: "Pensamentos acelerados, insegurança, medos e dificuldade para relaxar.",
+    subtitle:
+      "Pensamentos acelerados, insegurança, medos e dificuldade para relaxar.",
     situations: [
       "Preocupação constante com o futuro",
       "Pensamentos acelerados e dificuldade para relaxar",
@@ -32,7 +39,8 @@ export const concerns = [
   {
     number: "02",
     title: "Autoestima, autoconhecimento e emoções",
-    subtitle: "Autocrítica, insegurança, necessidade de aprovação e compreensão das próprias emoções.",
+    subtitle:
+      "Autocrítica, insegurança, necessidade de aprovação e compreensão das próprias emoções.",
     situations: [
       "Insegurança e autocrítica excessiva",
       "Dificuldade em reconhecer e expressar sentimentos",
@@ -59,7 +67,8 @@ export const concerns = [
   {
     number: "04",
     title: "Estresse, sobrecarga e esgotamento emocional",
-    subtitle: "Excesso de responsabilidades, irritabilidade e dificuldade para equilibrar as demandas da vida.",
+    subtitle:
+      "Excesso de responsabilidades, irritabilidade e dificuldade para equilibrar as demandas da vida.",
     situations: [
       "Sensação de estar sempre sobrecarregado(a)",
       "Dificuldade para conciliar vida pessoal e profissional",
@@ -72,7 +81,8 @@ export const concerns = [
   {
     number: "05",
     title: "Procrastinação, organização e produtividade",
-    subtitle: "Adiamento de tarefas, dificuldade para manter o foco, planejamento e autocobrança.",
+    subtitle:
+      "Adiamento de tarefas, dificuldade para manter o foco, planejamento e autocobrança.",
     situations: [
       "Adiamento frequente de tarefas importantes",
       "Dificuldade para iniciar ou concluir atividades",
@@ -85,7 +95,8 @@ export const concerns = [
   {
     number: "06",
     title: "Humor e sofrimento emocional",
-    subtitle: "Tristeza, desânimo, culpa e dificuldades para lidar com as emoções.",
+    subtitle:
+      "Tristeza, desânimo, culpa e dificuldades para lidar com as emoções.",
     situations: [
       "Tristeza persistente e desânimo",
       "Perda de interesse por atividades antes prazerosas",
@@ -111,7 +122,8 @@ export const concerns = [
   {
     number: "08",
     title: "Sono e hábitos",
-    subtitle: "Dificuldade para dormir, desacelerar e manter uma rotina de descanso.",
+    subtitle:
+      "Dificuldade para dormir, desacelerar e manter uma rotina de descanso.",
     situations: [
       "Dificuldade para adormecer ou manter o sono",
       "Pensamentos recorrentes na hora de dormir",
@@ -123,7 +135,8 @@ export const concerns = [
   {
     number: "09",
     title: "Experiências traumáticas e situações difíceis",
-    subtitle: "Sofrimento após experiências marcantes e dificuldade para se sentir seguro(a) novamente.",
+    subtitle:
+      "Sofrimento após experiências marcantes e dificuldade para se sentir seguro(a) novamente.",
     situations: [
       "Sofrimento relacionado a experiências marcantes",
       "Medo e insegurança após situações ameaçadoras",
@@ -136,7 +149,8 @@ export const concerns = [
   {
     number: "10",
     title: "Comportamentos repetitivos e dificuldades de controle",
-    subtitle: "Pensamentos intrusivos ou hábitos que geram sofrimento e interferem na rotina.",
+    subtitle:
+      "Pensamentos intrusivos ou hábitos que geram sofrimento e interferem na rotina.",
     situations: [
       "Pensamentos intrusivos que provocam desconforto",
       "Necessidade excessiva de verificar ou repetir ações",
@@ -204,6 +218,57 @@ export const youthConcerns = [
     description:
       "Dificuldades para fazer amizades, expressar sentimentos, comunicar necessidades, lidar com conflitos e desenvolver autonomia nas relações.",
     icon: "people",
+  },
+] as const;
+
+export const teenTherapyStages = [
+  {
+    title: "Primeiro encontro com os pais ou responsáveis",
+    subtitle: "Sessão de anamnese",
+    description:
+      "O primeiro encontro é destinado aos pais ou responsáveis para conhecer a história de vida do adolescente, seu desenvolvimento, os contextos familiar e escolar, suas relações interpessoais e as principais demandas que motivaram a busca pelo acompanhamento.",
+    points: [],
+  },
+  {
+    title: "Construção do vínculo terapêutico",
+    subtitle: "Confiança e segurança",
+    description:
+      "Nas sessões seguintes, o foco inicial é construir um vínculo de confiança e segurança para que o adolescente se sinta acolhido e à vontade para expressar sentimentos, pensamentos, dificuldades e experiências.",
+    points: [],
+  },
+  {
+    title: "Desenvolvimento do plano terapêutico",
+    subtitle: "Objetivos individualizados",
+    description:
+      "A partir das informações levantadas e das necessidades identificadas, são definidos os objetivos terapêuticos e as estratégias de intervenção mais adequadas. O planejamento é individualizado e pode ser ajustado conforme a evolução do adolescente.",
+    points: [],
+  },
+  {
+    title: "Intervenções e desenvolvimento de habilidades",
+    subtitle: "Recursos para o cotidiano",
+    description: "Ao longo do acompanhamento, o trabalho pode envolver:",
+    points: [
+      "Desenvolvimento do autoconhecimento e da inteligência emocional",
+      "Identificação, expressão e manejo das emoções",
+      "Manejo da ansiedade, da frustração, da impulsividade e de situações desafiadoras",
+      "Habilidades sociais, comunicação assertiva e resolução de conflitos",
+      "Fortalecimento das interações sociais e de relacionamentos saudáveis",
+      "Autonomia, autoestima e estratégias para lidar com desafios familiares, escolares e sociais",
+    ],
+  },
+  {
+    title: "Participação e orientação à família",
+    subtitle: "Pais e responsáveis",
+    description:
+      "Quando necessário, são realizados momentos de orientação aos pais ou responsáveis para favorecer a compreensão das necessidades do adolescente e promover estratégias que contribuam para seu desenvolvimento emocional, comportamental e social. Esses momentos respeitam o sigilo profissional e os limites éticos da atuação psicológica, preservando a privacidade do adolescente.",
+    points: [],
+  },
+  {
+    title: "Continuidade do acompanhamento",
+    subtitle: "Um processo gradual",
+    description:
+      "A continuidade das sessões ajuda a fortalecer o vínculo terapêutico, consolidar habilidades, acompanhar mudanças e trabalhar dificuldades que possam surgir. Interrupções frequentes ou o encerramento precoce podem dificultar a continuidade do trabalho e a consolidação dos recursos que estão sendo desenvolvidos.",
+    points: [],
   },
 ] as const;
 

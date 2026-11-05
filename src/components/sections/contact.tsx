@@ -1,3 +1,4 @@
+import { professional } from "@/lib/site-content";
 import { ContactLink } from "../ui/contact-link";
 import { Icon } from "../ui/icon";
 
@@ -23,6 +24,16 @@ export function Contact() {
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.
         </span>
+        <div className="contact-details">
+          <a href={`tel:+${professional.phone}`}>{professional.phoneDisplay}</a>
+          <a
+            href={professional.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @psirafaellylourenco
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { youthConcerns } from "@/lib/site-content";
+import { teenTherapyStages, youthConcerns } from "@/lib/site-content";
 import { ContactLink } from "../ui/contact-link";
 import { Icon, type IconName } from "../ui/icon";
 import { SectionHeading } from "../ui/section-heading";
@@ -99,8 +99,8 @@ function YouthTherapy() {
           </p>
           <p>
             Mais do que olhar para uma dificuldade isolada, o objetivo é
-            compreender a criança ou o adolescente como um todo, respeitando
-            seu tempo, suas potencialidades e suas necessidades.
+            compreender a criança ou o adolescente como um todo, respeitando seu
+            tempo, suas potencialidades e suas necessidades.
           </p>
         </div>
       </div>
@@ -121,11 +121,60 @@ function YouthTherapy() {
         ))}
       </div>
       <p className="youth-closing">
-        Cada história merece ser escutada com cuidado. Cada criança e adolescente
-        merece encontrar espaço para se desenvolver, construir recursos
-        emocionais e descobrir novas maneiras de lidar com o mundo.
+        Cada história merece ser escutada com cuidado. Cada criança e
+        adolescente merece encontrar espaço para se desenvolver, construir
+        recursos emocionais e descobrir novas maneiras de lidar com o mundo.
       </p>
     </div>
+  );
+}
+
+function TeenTherapyProcess() {
+  return (
+    <section className="teen-process" aria-labelledby="teen-process-title">
+      <div className="teen-process-intro">
+        <div>
+          <span className="eyebrow">ACOMPANHAMENTO INDIVIDUALIZADO</span>
+          <h3 id="teen-process-title">
+            Como funciona a psicoterapia para adolescentes?
+          </h3>
+        </div>
+        <p>
+          As sessões têm duração de 50 minutos e são conduzidas de acordo com as
+          necessidades individuais de cada adolescente, respeitando seu
+          desenvolvimento, suas particularidades e suas demandas emocionais,
+          comportamentais e sociais.
+        </p>
+      </div>
+      <ol className="teen-process-grid">
+        {teenTherapyStages.map((stage, index) => (
+          <li className="teen-process-card" key={stage.title}>
+            <span className="teen-process-number">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <span className="teen-process-subtitle">{stage.subtitle}</span>
+            <h4>{stage.title}</h4>
+            <p>{stage.description}</p>
+            {stage.points.length > 0 && (
+              <ul>
+                {stage.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ol>
+      <p className="teen-process-closing">
+        O objetivo é oferecer um espaço seguro, acolhedor e ético, favorecendo o
+        desenvolvimento emocional, social e comportamental do adolescente,
+        ampliando seus recursos para lidar com desafios, fortalecer suas
+        relações interpessoais e desenvolver maior autonomia e qualidade de
+        vida. A psicoterapia é um processo que exige tempo, participação e
+        compromisso, respeitando as necessidades e o ritmo de desenvolvimento de
+        cada adolescente.
+      </p>
+    </section>
   );
 }
 
@@ -149,7 +198,11 @@ export function Services() {
           icon="sun"
         />
         <YouthTherapy />
-        <aside className="adolescent-reel" aria-label="Vídeo sobre adolescentes">
+        <TeenTherapyProcess />
+        <aside
+          className="adolescent-reel"
+          aria-label="Vídeo sobre adolescentes"
+        >
           <div className="adolescent-reel-copy">
             <span className="eyebrow">UM CONTEÚDO PARA ESTA FASE</span>
             <h3>Uma conversa sobre adolescência.</h3>
