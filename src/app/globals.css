@@ -3,12 +3,15 @@
 :root {
   --wine: #492a34;
   --brown: #462719;
-  --cream: #edeadf;
-  --paper: #f8f7f2;
+  --cream: #ffffff;
+  --paper: #ffffff;
   --ink: #3d3030;
   --muted: #726563;
   --line: #d9d3c8;
   --rose: #ddc9c8;
+  --youth-blue: #dfeffa;
+  --youth-yellow: #fff3c6;
+  --youth-pink: #f6d4ff;
   --font-body: Arial, Helvetica, sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
   --background: var(--paper);
@@ -196,7 +199,7 @@ svg {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #edeadff5;
+  background: #fffffff5;
   border-bottom: 1px solid #492a3412;
   backdrop-filter: blur(15px);
 }
@@ -760,6 +763,13 @@ svg {
   line-height: 1.85;
 }
 .services {
+  padding: 0;
+}
+.youth-area {
+  padding-block: 112px;
+  background: var(--youth-blue);
+}
+.couple-area {
   padding-block: 112px;
 }
 .service-panel {
@@ -822,9 +832,15 @@ svg {
 }
 .youth-topic-card {
   padding: 24px 22px;
-  border: 1px solid var(--line);
+  border: 1px solid #492a3417;
   border-radius: 7px;
-  background: #ffffff30;
+  background: var(--youth-yellow);
+}
+.youth-topic-card:nth-child(3n + 2) {
+  background: var(--youth-pink);
+}
+.youth-topic-card:nth-child(3n) {
+  background: #ffffffa8;
 }
 .youth-topic-card > svg {
   width: 22px;
@@ -893,9 +909,15 @@ svg {
 }
 .teen-process-card {
   padding: 27px 25px;
-  border: 1px solid var(--line);
+  border: 1px solid #492a3417;
   border-radius: 7px;
-  background: #ffffff30;
+  background: #ffffffb8;
+}
+.teen-process-card:nth-child(3n + 2) {
+  background: var(--youth-yellow);
+}
+.teen-process-card:nth-child(3n) {
+  background: var(--youth-pink);
 }
 .teen-process-number {
   display: inline-block;
@@ -932,7 +954,7 @@ svg {
 .teen-process-closing {
   margin-top: 24px;
   padding: 25px 29px;
-  background: var(--cream);
+  background: var(--youth-yellow);
   border-radius: 7px;
   color: var(--muted);
   font-size: 0.9375rem;
@@ -945,7 +967,7 @@ svg {
   gap: 48px;
   margin: 56px 0 112px;
   padding: 40px 52px;
-  background: var(--cream);
+  background: var(--youth-pink);
   border-radius: 8px;
 }
 .adolescent-reel + .service-panel {
@@ -985,7 +1007,7 @@ svg {
   height: 510px;
   border-radius: 7px;
   overflow: hidden;
-  background: #e0d8cf;
+  background: #ffffff;
 }
 .service-photo img {
   object-fit: cover;
@@ -1005,6 +1027,9 @@ svg {
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   font-weight: 600;
+}
+.youth-area .service-photo-label {
+  background: var(--youth-yellow);
 }
 .service-photo-label svg {
   width: 18px;
@@ -1083,7 +1108,7 @@ svg {
   display: grid;
   place-items: center;
   border: 1px solid #ffffff9c;
-  background: #edeadf26;
+  background: #ffffff26;
   backdrop-filter: blur(6px);
   z-index: 1;
   transition: background 0.2s;
@@ -1355,6 +1380,10 @@ svg {
   .section {
     padding-block: 90px;
   }
+  .youth-area,
+  .couple-area {
+    padding-block: 90px;
+  }
   .section-intro {
     gap: 40px;
   }
@@ -1519,6 +1548,10 @@ svg {
     width: calc(100% - 40px);
   }
   .section {
+    padding-block: 68px;
+  }
+  .youth-area,
+  .couple-area {
     padding-block: 68px;
   }
   .header-inner {

@@ -180,44 +180,48 @@ function TeenTherapyProcess() {
 
 export function Services() {
   return (
-    <section className="section services">
-      <div className="container">
-        <ServicePanel
-          id="adolescentes"
-          eyebrow="PSICOTERAPIA INFANTO-JUVENIL"
-          title="Cuidado para crianças"
-          emphasis="e adolescentes."
-          description="Um espaço para compreender emoções, acolher dificuldades e construir novas possibilidades."
-          image="/images/optimized/rafaelly-adolescentes.webp"
-          imageAlt="Rafaelly Lourenço, psicóloga responsável pelo acompanhamento de crianças e adolescentes"
-          items={[
-            "Ansiedade, medos e inseguranças",
-            "Emoções, autoestima e relacionamentos",
-            "Família, rotina e desafios escolares",
-          ]}
-          icon="sun"
-        />
-        <YouthTherapy />
-        <TeenTherapyProcess />
-        <aside
-          className="adolescent-reel"
-          aria-label="Vídeo sobre adolescentes"
-        >
-          <div className="adolescent-reel-copy">
-            <span className="eyebrow">UM CONTEÚDO PARA ESTA FASE</span>
-            <h3>Uma conversa sobre adolescência.</h3>
-            <p>
-              Assista ao vídeo e explore este conteúdo junto com a proposta de
-              escuta e acolhimento para adolescentes.
-            </p>
-          </div>
-          <iframe
-            src="https://www.instagram.com/reel/DezFzU7gZ-T/embed"
-            title="Vídeo do Instagram sobre adolescentes"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            allowFullScreen
+    <section className="services">
+      <div className="youth-area">
+        <div className="container">
+          <ServicePanel
+            id="adolescentes"
+            eyebrow="PSICOTERAPIA INFANTO-JUVENIL"
+            title="Cuidado para crianças"
+            emphasis="e adolescentes."
+            description="Um espaço para compreender emoções, acolher dificuldades e construir novas possibilidades."
+            image="/images/optimized/rafaelly-adolescentes.webp"
+            imageAlt="Rafaelly Lourenço, psicóloga responsável pelo acompanhamento de crianças e adolescentes"
+            items={[
+              "Ansiedade, medos e inseguranças",
+              "Emoções, autoestima e relacionamentos",
+              "Família, rotina e desafios escolares",
+            ]}
+            icon="sun"
           />
-        </aside>
+          <YouthTherapy />
+          <TeenTherapyProcess />
+          <aside
+            className="adolescent-reel"
+            aria-label="Vídeo sobre adolescentes"
+          >
+            <div className="adolescent-reel-copy">
+              <span className="eyebrow">UM CONTEÚDO PARA ESTA FASE</span>
+              <h3>Uma conversa sobre adolescência.</h3>
+              <p>
+                Assista ao vídeo e explore este conteúdo junto com a proposta de
+                escuta e acolhimento para adolescentes.
+              </p>
+            </div>
+            <iframe
+              src="https://www.instagram.com/reel/DezFzU7gZ-T/embed"
+              title="Vídeo do Instagram sobre adolescentes"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </aside>
+        </div>
+      </div>
+      <div className="container couple-area">
         <ServicePanel
           id="casais"
           eyebrow="TERAPIA PARA CASAIS"
