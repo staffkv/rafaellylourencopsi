@@ -129,6 +129,43 @@ function YouthTherapy() {
   );
 }
 
+function YouthGallery() {
+  const images = [
+    {
+      src: "/images/optimized/sala-infantojuvenil.webp",
+      alt: "Sala de atendimento com quadros infantis, planta e poltronas",
+      caption: "Sala de atendimento",
+    },
+    {
+      src: "/images/optimized/ambiente-infantojuvenil.webp",
+      alt: "Ambiente de atendimento com estante, livros e porta de consultório",
+      caption: "Espaço de acolhimento",
+    },
+  ];
+
+  return (
+    <section className="youth-gallery" aria-label="Espaço de atendimento">
+      <div className="youth-gallery-heading">
+        <span className="eyebrow">CONHEÇA O ESPAÇO</span>
+        <h3>Um ambiente para acolher cada história.</h3>
+      </div>
+      <div className="youth-gallery-grid">
+        {images.map((image) => (
+          <figure className="youth-gallery-photo" key={image.src}>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 760px) 90vw, 42vw"
+            />
+            <figcaption>{image.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function TeenTherapyProcess() {
   return (
     <section className="teen-process" aria-labelledby="teen-process-title">
@@ -189,7 +226,7 @@ export function Services() {
             title="Cuidado para crianças"
             emphasis="e adolescentes."
             description="Um espaço para compreender emoções, acolher dificuldades e construir novas possibilidades."
-            image="/images/optimized/rafaelly-adolescentes.webp"
+            image="/images/optimized/rafaelly-infantojuvenil.webp"
             imageAlt="Rafaelly Lourenço, psicóloga responsável pelo acompanhamento de crianças e adolescentes"
             items={[
               "Ansiedade, medos e inseguranças",
@@ -198,6 +235,7 @@ export function Services() {
             ]}
             icon="sun"
           />
+          <YouthGallery />
           <YouthTherapy />
           <TeenTherapyProcess />
           <aside

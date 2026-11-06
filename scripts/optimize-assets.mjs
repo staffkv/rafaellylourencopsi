@@ -8,6 +8,9 @@ const photos = [
   ["public/images/podem-ser-usadas/IMG_5563.JPG.jpeg", "rafaelly-sobre", 1100],
   ["public/images/image-adolescente.PNG", "rafaelly-adolescentes", 1000],
   ["public/images/podem-ser-usadas/IMG_5567.JPG.jpeg", "rafaelly-casais", 1000],
+  ["public/images/IMG_5451.JPG.jpeg", "rafaelly-infantojuvenil", 1000],
+  ["public/images/IMG_0916.jpg.jpeg", "sala-infantojuvenil", 1000],
+  ["public/images/IMG_0926.jpg.jpeg", "ambiente-infantojuvenil", 1000],
 ];
 for (const [source, name, width] of photos) {
   await sharp(source)
@@ -16,7 +19,7 @@ for (const [source, name, width] of photos) {
     .webp({ quality: 84 })
     .toFile(`${output}/${name}.webp`);
 }
-async function createWhiteBackgroundLogo({ extract, resize, format, path }) {
+async function createWhiteBackgroundMark({ extract, resize, path }) {
   const { data, info } = await sharp(
     "public/images/LOGOTIPO HORIZONTAL VARIAÇÃO 2.png",
   )
@@ -37,24 +40,17 @@ async function createWhiteBackgroundLogo({ extract, resize, format, path }) {
     }
   }
 
-  const image = sharp(data, { raw: info }).resize(resize);
-  if (format === "webp") {
-    await image.webp({ quality: 95 }).toFile(path);
-  } else {
-    await image.png().toFile(path);
-  }
+  await sharp(data, { raw: info }).resize(resize).png().toFile(path);
 }
 
-await createWhiteBackgroundLogo({
-  extract: { left: 760, top: 1770, width: 2870, height: 940 },
-  resize: { width: 690 },
-  format: "webp",
-  path: `${output}/logo.webp`,
-});
-await createWhiteBackgroundLogo({
+await sharp("public/images/MARCA D AGUA LOGOTIPO HORIZONTAL.png")
+  .trim()
+  .resize({ width: 690 })
+  .webp({ quality: 95 })
+  .toFile(`${output}/logo.webp`);
+await createWhiteBackgroundMark({
   extract: { left: 770, top: 1740, width: 1070, height: 1070 },
   resize: { width: 128, height: 128 },
-  format: "png",
   path: `${output}/brand-icon.png`,
 });
 console.log("Imagens otimizadas; originais preservados.");

@@ -12,8 +12,8 @@ export function Footer() {
               <Image
                 src="/images/optimized/logo.webp"
                 alt="Rafaelly Lourenço — Psicóloga clínica"
-                width={230}
-                height={76}
+                width={690}
+                height={212}
               />
             </a>
             <p>
