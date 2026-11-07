@@ -6,17 +6,19 @@ export function ContactLink({
   children = "Vamos conversar?",
   variant = "primary",
   className = "",
+  href = professional.whatsappUrl,
   onClick,
 }: {
   children?: ReactNode;
   variant?: "primary" | "light" | "outline";
   className?: string;
+  href?: string;
   onClick?: () => void;
 }) {
   return (
     <a
       className={`button button-${variant} ${className}`}
-      href={professional.whatsappUrl}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       onClick={onClick}

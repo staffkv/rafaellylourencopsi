@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { teenTherapyStages, youthConcerns } from "@/lib/site-content";
+import {
+  professional,
+  teenTherapyStages,
+  youthConcerns,
+} from "@/lib/site-content";
 import { ContactLink } from "../ui/contact-link";
 import { Icon, type IconName } from "../ui/icon";
 import { SectionHeading } from "../ui/section-heading";
@@ -15,6 +19,7 @@ function ServicePanel({
   items,
   icon,
   reverse = false,
+  contactHref,
 }: {
   id: string;
   title: string;
@@ -26,6 +31,7 @@ function ServicePanel({
   items: string[];
   icon: IconName;
   reverse?: boolean;
+  contactHref?: string;
 }) {
   return (
     <article id={id} className={`service-panel${reverse ? " reversed" : ""}`}>
@@ -56,7 +62,9 @@ function ServicePanel({
             </li>
           ))}
         </ul>
-        <ContactLink>Conversar sobre o atendimento</ContactLink>
+        <ContactLink href={contactHref}>
+          Conversar sobre o atendimento
+        </ContactLink>
       </div>
     </article>
   );
@@ -67,10 +75,10 @@ function YouthTherapy() {
     <div className="youth-therapy">
       <div className="youth-overview">
         <SectionHeading
-          eyebrow="PSICOTERAPIA INFANTO-JUVENIL"
+          eyebrow="PSICOTERAPIA INFANTOJUVENIL"
           description="Um espaço para compreender emoções, acolher dificuldades e construir novas possibilidades."
         >
-          Como a psicoterapia infanto-juvenil pode ajudar seu filho(a)?
+          Como a psicoterapia infantojuvenil pode ajudar seu filho(a)?
         </SectionHeading>
         <div className="youth-copy">
           <p>
@@ -222,7 +230,7 @@ export function Services() {
         <div className="container">
           <ServicePanel
             id="adolescentes"
-            eyebrow="PSICOTERAPIA INFANTO-JUVENIL"
+            eyebrow="PSICOTERAPIA INFANTOJUVENIL"
             title="Cuidado para crianças"
             emphasis="e adolescentes."
             description="Um espaço para compreender emoções, acolher dificuldades e construir novas possibilidades."
@@ -234,6 +242,7 @@ export function Services() {
               "Família, rotina e desafios escolares",
             ]}
             icon="sun"
+            contactHref={professional.youthWhatsappUrl}
           />
           <YouthGallery />
           <YouthTherapy />

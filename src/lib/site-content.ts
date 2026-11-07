@@ -1,7 +1,7 @@
 const whatsappNumber = (
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5583986949995"
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "558391814951"
 ).replace(/\D/g, "");
-const phoneParts = whatsappNumber.match(/^55(\d{2})(\d{5})(\d{4})$/);
+const phoneParts = whatsappNumber.match(/^55(\d{2})(\d{4,5})(\d{4})$/);
 
 export const professional = {
   name: "Rafaelly Lourenço",
@@ -10,13 +10,17 @@ export const professional = {
   phoneDisplay: phoneParts
     ? `(${phoneParts[1]}) ${phoneParts[2]}-${phoneParts[3]}`
     : whatsappNumber,
-  instagramUrl: "https://www.instagram.com/psirafaellylourenco/",
-  whatsappUrl: `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, Rafaelly! Gostaria de saber mais sobre o atendimento psicológico.")}`,
+  instagramUrl:
+    "https://www.instagram.com/psirafaellylourenco?rpxt=MTZ3ZWIycHhhYnBtbw==",
+  childInstagramUrl:
+    "https://www.instagram.com/psi.rafaellylourenco?dlrf=MWJmcjJodGR3eXVwMA==",
+  whatsappUrl: "https://wa.me/message/7SQ7PVL4RSOZJ1",
+  youthWhatsappUrl: `https://wa.me/${whatsappNumber}`,
 };
 
 export const navigation = [
   { label: "Início", href: "#inicio" },
-  { label: "Ansiedade", href: "#ansiedade" },
+  { label: "Terapia para jovens e adultos", href: "#ansiedade" },
   { label: "Terapia Infantojuvenil", href: "#adolescentes" },
   { label: "Terapia para Casais", href: "#casais" },
 ];

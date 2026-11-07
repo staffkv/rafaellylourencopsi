@@ -19,7 +19,10 @@ export function Contact() {
           Podemos descobrir juntos.
         </p>
         <ContactLink variant="light">
-          Falar com a Rafaelly no WhatsApp
+          WhatsApp para adultos e adolescentes
+        </ContactLink>
+        <ContactLink variant="light" href={professional.youthWhatsappUrl}>
+          WhatsApp para crianças e adolescentes
         </ContactLink>
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.
@@ -31,7 +34,14 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            @psirafaellylourenco
+            Instagram para adultos e adolescentes · @psirafaellylourenco
+          </a>
+          <a
+            href={professional.childInstagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram infantil · @psi.rafaellylourenco
           </a>
         </div>
       </div>

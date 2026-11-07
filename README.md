@@ -24,12 +24,12 @@ Os componentes são renderizados no servidor; somente o menu e o player de víde
 
 ## Contato
 
-O WhatsApp padrão é o informado: **+55 83 98694-9995**, convertido sem alterar dígitos para `5583986949995`. Todos os CTAs reutilizam esse contato e uma mensagem inicial.
+Os contatos são separados por público: adultos usam `https://wa.me/message/7SQ7PVL4RSOZJ1`; crianças e adolescentes usam o número configurado em `NEXT_PUBLIC_WHATSAPP_NUMBER` (padrão `558391814951`). O Instagram também possui perfis separados para crianças e para adultos/adolescentes.
 
 O CRP informado é **13/13489**, exibido na apresentação e no rodapé. Para alterar os contatos ou o registro, crie `.env.local` usando `.env.example` como modelo:
 
 ```dotenv
-NEXT_PUBLIC_WHATSAPP_NUMBER=5583986949995
+NEXT_PUBLIC_WHATSAPP_NUMBER=558391814951
 NEXT_PUBLIC_CRP=13/13489
 ```
 
