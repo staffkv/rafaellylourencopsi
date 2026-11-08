@@ -27,23 +27,6 @@ export function Contact() {
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.
         </span>
-        <div className="contact-details">
-          <a href={`tel:+${professional.phone}`}>{professional.phoneDisplay}</a>
-          <a
-            href={professional.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram para adultos e adolescentes · @psirafaellylourenco
-          </a>
-          <a
-            href={professional.childInstagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram infantil · @psi.rafaellylourenco
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ export const professional = {
 
 export const navigation = [
   { label: "Início", href: "#inicio" },
-  { label: "Terapia para jovens e adultos", href: "#ansiedade" },
+  { label: "Terapia para Jovens e Adultos", href: "#ansiedade" },
   { label: "Terapia Infantojuvenil", href: "#adolescentes" },
   { label: "Terapia para Casais", href: "#casais" },
 ];

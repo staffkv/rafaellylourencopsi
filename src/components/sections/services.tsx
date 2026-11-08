@@ -249,19 +249,21 @@ export function Services() {
           <TeenTherapyProcess />
           <aside
             className="adolescent-reel"
-            aria-label="Vídeo sobre adolescentes"
+            aria-label="Vídeo sobre infância e adolescência"
           >
             <div className="adolescent-reel-copy">
-              <span className="eyebrow">UM CONTEÚDO PARA ESTA FASE</span>
-              <h3>Uma conversa sobre adolescência.</h3>
+              <span className="eyebrow">
+                ATENDIMENTO PRESENCIAL EM JOÃO PESSOA-PB.
+              </span>
+              <h3>Uma conversa sobre a infância e adolescência.</h3>
               <p>
                 Assista ao vídeo e explore este conteúdo junto com a proposta de
-                escuta e acolhimento para adolescentes.
+                escuta, acolhimento e desenvolvimento.
               </p>
             </div>
             <iframe
               src="https://www.instagram.com/reel/DezFzU7gZ-T/embed"
-              title="Vídeo do Instagram sobre adolescentes"
+              title="Vídeo do Instagram sobre infância e adolescência"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               allowFullScreen
             />
