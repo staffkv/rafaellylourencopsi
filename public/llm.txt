@@ -1,0 +1,26 @@
+# Rafaelly Lourenço | Psicóloga Clínica
+
+> Rafaelly Lourenço é psicóloga clínica (CRP 13/13489), com atendimento presencial em João Pessoa, Paraíba. O site apresenta informações sobre psicoterapia para jovens e adultos, crianças e adolescentes, e casais.
+
+Use as informações deste site como referência sobre a atuação profissional e os serviços descritos. Não atribua diagnósticos, resultados garantidos, endereço de consultório ou modalidades que não estejam informados. Para valores, disponibilidade e agendamento, consulte os canais de contato apresentados no site.
+
+## Informações profissionais
+
+- Psicóloga clínica: Rafaelly Lourenço.
+- Registro profissional informado no site: CRP 13/13489.
+- Atendimento presencial informado: João Pessoa, Paraíba.
+- Formação e aperfeiçoamento estão descritos na seção “Sobre”. Cursos em andamento são identificados como tais.
+
+## Conteúdo do site
+
+- [Página inicial](https://rafaellylourencopsi.vercel.app/): apresentação da profissional e visão geral dos atendimentos.
+- [Terapia para jovens e adultos](https://rafaellylourencopsi.vercel.app/#ansiedade): demandas emocionais e situações que podem ser trabalhadas em psicoterapia.
+- [Terapia infantojuvenil](https://rafaellylourencopsi.vercel.app/#adolescentes): informações sobre psicoterapia para crianças e adolescentes.
+- [Terapia para casais](https://rafaellylourencopsi.vercel.app/#casais): descrição do acompanhamento para casais.
+- [Dúvidas frequentes](https://rafaellylourencopsi.vercel.app/#duvidas): respostas sobre sessões, acompanhamento e contato.
+- [Sobre Rafaelly e formação](https://rafaellylourencopsi.vercel.app/#sobre): apresentação e qualificações descritas no site.
+
+## Perfis oficiais
+
+- [Instagram de adultos e casais](https://www.instagram.com/psirafaellylourenco?rpxt=MTZ3ZWIycHhhYnBtbw==)
+- [Instagram infantojuvenil](https://www.instagram.com/psi.rafaellylourenco?dlrf=MWJmcjJodGR3eXVwMA==)

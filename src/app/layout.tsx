@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteUrl = "https://rafaellylourencopsi.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Rafaelly Lourenço | Psicóloga Clínica",
+  metadataBase: new URL(siteUrl),
+  title: "Psicóloga em João Pessoa | Rafaelly Lourenço",
   description:
-    "Um espaço de escuta e acolhimento com a psicóloga Rafaelly Lourenço. Conheça seu trabalho com ansiedade, crianças, adolescentes e casais e sua abordagem em TCC.",
+    "Psicoterapia em João Pessoa para jovens, adultos, crianças, adolescentes e casais com Rafaelly Lourenço, psicóloga clínica (CRP 13/13489).",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   icons: {
     icon: {
       url: "/images/optimized/brand-icon.png?v=2",
@@ -14,11 +29,26 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico?v=2",
   },
   openGraph: {
-    title: "Rafaelly Lourenço | Psicóloga Clínica",
+    title: "Psicóloga em João Pessoa | Rafaelly Lourenço",
     description:
-      "Acolher sua história. Compreender o que você sente. Construir novos caminhos.",
+      "Psicoterapia para jovens, adultos, crianças, adolescentes e casais em João Pessoa.",
     locale: "pt_BR",
     type: "website",
+    url: siteUrl,
+    siteName: "Rafaelly Lourenço | Psicóloga",
+    images: [
+      {
+        url: "/images/optimized/rafaelly-hero.webp",
+        alt: "Psicóloga Rafaelly Lourenço",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Psicóloga em João Pessoa | Rafaelly Lourenço",
+    description:
+      "Psicoterapia para jovens, adultos, crianças, adolescentes e casais em João Pessoa.",
+    images: ["/images/optimized/rafaelly-hero.webp"],
   },
 };
 

@@ -18,12 +18,14 @@ export function Contact() {
           <br />
           Podemos descobrir juntos.
         </p>
-        <ContactLink variant="light">
-          WhatsApp para adultos e adolescentes
-        </ContactLink>
-        <ContactLink variant="light" href={professional.youthWhatsappUrl}>
-          WhatsApp para crianças e adolescentes
-        </ContactLink>
+        <div className="contact-actions">
+          <ContactLink variant="light">
+            WhatsApp para adultos e adolescentes
+          </ContactLink>
+          <ContactLink variant="light" href={professional.youthWhatsappUrl}>
+            WhatsApp para crianças e adolescentes
+          </ContactLink>
+        </div>
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.
         </span>
