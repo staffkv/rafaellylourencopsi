@@ -25,6 +25,13 @@ export function Contact() {
           <ContactLink variant="light" href={professional.youthWhatsappUrl}>
             WhatsApp para crianças e adolescentes
           </ContactLink>
+          <a
+            className="button button-light"
+            href={`mailto:${professional.email}`}
+          >
+            <Icon name="mail" />
+            <span>E-mail para adultos e casais</span>
+          </a>
         </div>
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.
