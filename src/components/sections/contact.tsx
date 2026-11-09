@@ -10,8 +10,7 @@ export function Contact() {
         <span className="eyebrow">UM CONVITE PARA OLHAR PARA VOCÊ</span>
         <h2>
           Todo novo caminho começa
-          <br />
-          <em>com um primeiro passo.</em>
+          <br /> <em>com um primeiro passo.</em>
         </h2>
         <p>
           Você não precisa saber por onde começar.
@@ -20,18 +19,11 @@ export function Contact() {
         </p>
         <div className="contact-actions">
           <ContactLink variant="light">
-            WhatsApp para adultos e adolescentes
+            WhatsApp para Adultos e Casais
           </ContactLink>
           <ContactLink variant="light" href={professional.youthWhatsappUrl}>
             WhatsApp para crianças e adolescentes
           </ContactLink>
-          <a
-            className="button button-light"
-            href={`mailto:${professional.email}`}
-          >
-            <Icon name="mail" />
-            <span>E-mail para adultos e casais</span>
-          </a>
         </div>
         <span className="contact-caption">
           Com acolhimento, respeito e cuidado.

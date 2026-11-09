@@ -6,7 +6,6 @@ const phoneParts = whatsappNumber.match(/^55(\d{2})(\d{4,5})(\d{4})$/);
 export const professional = {
   name: "Rafaelly Lourenço",
   crp: process.env.NEXT_PUBLIC_CRP || "13/13489",
-  email: "rafaellykerolaynne@gmail.com",
   phone: whatsappNumber,
   phoneDisplay: phoneParts
     ? `(${phoneParts[1]}) ${phoneParts[2]}-${phoneParts[3]}`
