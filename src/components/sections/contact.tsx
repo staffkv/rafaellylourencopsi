@@ -22,7 +22,7 @@ export function Contact() {
             WhatsApp para Adultos e Casais
           </ContactLink>
           <ContactLink variant="light" href={professional.youthWhatsappUrl}>
-            WhatsApp para crianças e adolescentes
+            WhatsApp para Crianças e Adolescentes
           </ContactLink>
         </div>
         <span className="contact-caption">
